@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Emission Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Carbon Emission Dashboard</div>
+        
+        <div class="content">
+            <div class="column">
+                <div class="box">
+                    <img src="{{ url_for('static', filename='images/image.jpeg') }}" alt="Carbon Emission Image" class="responsive-image">
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="box">
+                    <div class="subheader">Offset CO2 emissions from your booking through high-quality carbon offset projects</div>
+                    <div class="section"><a href="https://ourworldindata.org/co2-emissions" target="_blank">CO2 Emission Info</a></div>
+                    <div class="section"><a href="https://www.epa.gov/energy/greenhouse-gases-equivalencies-calculator-calculations-and-references#:~:text=Carbon%20dioxide%20emissions%20per%20therm,carbon%20(44%2F12)." target="_blank">How CO2 Emissions are calculated?</a></div>
+                </div>
+                
+                <div class="box">
+                    <div class="subheader">CO2 emissions from each air passenger </div>
+                    <div class="highlight">{{ total_emissions }} Kg CO2</div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="box">
+                    <div class="subheader">Price to offset</div>
+                    <div class="price">HKD 20</div>
+                    <a href="https://www.greenclimate.fund" target="_blank" class="button">Contribute now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

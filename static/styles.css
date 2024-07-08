@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2e8b57;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #444444;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    flex: 1; /* Ensure all boxes take up the same amount of space */
+    position: relative;
+}
+
+.subheader {
+    font-size: 1.5em;
+    color: #2e8b57;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section {
+    font-size: 1em;
+    color: #f0f0f0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.highlight {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2e8b57;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button {
+    font-size: 1.5em;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 8px;
+    width: 80%;
+    position: absolute;
+    bottom: 20px;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media Queries for Responsive Text */
+@media (max-width: 1200px) {
+    .header {
+        font-size: 2em;
+    }
+
+    .subheader, .price {
+        font-size: 1.2em;
+    }
+
+    .section, .highlight {
+        font-size: 1em;
+    }
+
+    .button {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.5em;
+    }
+
+    .subheader, .price {
+        font-size: 1em;
+    }
+
+    .section, .highlight {
+        font-size: 0.8em;
+    }
+
+    .button {
+        font-size: 1em;
+    }
+}
